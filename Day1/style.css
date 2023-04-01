@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --nav-bg-color: pink;
+}
+/* GENERALITES */
+.container{
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+}
+
+/*
+NAV Section
+*/
+nav{
+    display: flex;
+    background-color: var(--nav-bg-color);
+    padding: 2em;
+}
+.nav_li{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style: none;
+}
