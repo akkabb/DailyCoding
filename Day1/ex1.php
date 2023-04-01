@@ -15,21 +15,23 @@
     <div class="container">
         <main>
             <section>
-                <h1>Manipuler les Variables et les constantes</h1>
-                <h2>Enoncé :</h2>
-                <p>
-                    1. Donner les valeurs des variables $a,$b,$c,$d à la fin des scripts suivants : <br>
-                    a.script 1 <br>
-                    <?= '<ul>
-                            <li>$a="Les ";<li>
-                            <li>$b="7 merveilles du monde";</li>
-                            <li>$c=$a . $b;</li>
-                            <li>$d=$b + 13;</li>
-                            <li>$b= &$c;</li>
-                        </ul>';
-                    ?>
-                    <!-- Source : www.exelib.net -->
-                </p>
+                <div class="wrapper_gray">
+                    <h1>Manipuler les Variables et les constantes</h1>
+                    <h2>Enoncé :</h2>
+                    <p>
+                        1. Donner les valeurs des variables $a,$b,$c,$d à la fin des scripts suivants : <br>
+                        a.script 1 :<br>
+                        <?= '<ul>
+                                <li>$a= "Les ";<li>
+                                <li>$b= "7 merveilles du monde";</li>
+                                <li>$c= $a . $b;</li>
+                                <li>$d= $b + 13;</li>
+                                <li>$b= &$c;</li>
+                                </ul>';
+                                ?>
+                        <!-- Source : www.exelib.net -->
+                    </p>
+                </div>
                 <h3>Ma réponse au sujet : </h3>
                 <?php
                     $a="Les ";
@@ -48,12 +50,38 @@
                 </p>
                 <p>
                     <?php
-                       for  ($i = 0; $i<100; $i++)
-                            echo "**";
-                    ?>
+                       for  ($i = 0; $i<50; $i++)
+                       echo "**";
+                       ?>
                  </p>
+                 <h2>Enoncé :</h2>
+                 <p>
+                     b.script 2 : </br>
+                     <?= '
+                        <ul>
+                        <li>$a="5 + 5";</li>
+                        <li>$b="2E2";</li>
+                        <li>$c=$a + $b;</li>
+                        <li>$d=(double)$b;</li>
+                        </ul>
+                        ';?>
+                 </p>
+                 <?php 
+                    $a="5+5";
+                    $b="2E2";
+                    $c=$a+$b;
+                    $d=(double)$b;
+                 ?>
+                 <h3>Ma réponse au sujet : </h3>
+                 <p><?php
+                    echo $a . "<br>";
+                    echo $b . "<br>";
+                    echo $c . "<br>";
+                    echo $d . "<br>";
+                  ?></p>
             </section>
         </main>
+        <?php require_once('./include/footer.php')?>
     </div>
 </body>
 </html>

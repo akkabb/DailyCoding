@@ -1,38 +1,5 @@
 <?php
-$a="Les ";
-$b="7 merveilles du monde";
-$c=$a.$b;
-$d=$b+13;
-$b=&$c;
 
-echo $a . "<br>";
-echo $b . "<br>";
-echo $c . "<br>";
-echo $d . "<br>";
-
-for ($i = 0; $i<50; $i++)
-    echo "******************************************************************************";
-/*
-1. Donner les valeurs des variables $a,$b,$c,$d à la fin des scripts suivants : 
-b.script 2
-<?php
-	$a="5+5";
-	$b="2E2";
-	$c=$a+$b;
-	$d=(double)$b;
-?>
-//Source : www.exelib.net
-*/
-
-$a="5+5";
-$b="2E2";
-$c=$a+$b;
-$d=(double)$b;
-
-echo $a . "<br>";
-echo $b . "<br>";
-echo $c . "<br>";
-echo $d . "<br>";
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -48,11 +15,17 @@ echo $d . "<br>";
     <div class="container">
         <main>
             <section class="main_content">
-                <h1 class="main_title">Manipuler les Variables et les constantes</h1>
-                <h2>Enoncé :</h2>
+                <p class="main_title">
+                    La programmation est une compétence en constante évolution et il est important de continuer à la développer. C'est pourquoi j'ai décidé de m'engager dans une série d'éxercices de code quotidien.
+                    En travaillant sur des problèmes de programmation chaque jour, je m'exerce à résoudre des problèmes complexes de manière efficace et créative.
+                    Je suis convaincu que cette pratique quotidienne me permettra de progresser rapidement et de manière significative dans ma carrière de développeur et dans la résolution de problèmes informatiques en général.
+                    Enfin, je pense que cette démarche m'aidera à développer une plus grande confiance en moi-même en tant que développeur et à être plus à l'aise avec les défis de programmation que je pourrais rencontrer à l'avenir.
+                </p>
             </section>
         </main>
-    </div>
-    
+        <footer class="footer">
+            <p>© 2023 akkabb, Inc.</p>
+        </footer>
+    </div>  
 </body>
 </html>
