@@ -12,16 +12,7 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <img src="" alt="">
-            <nav>
-                <ul>
-                    <li><a href="exo1.php">Exercice 1</a></li>
-                    <li><a href="exo2.php">Exercice 2</a></li>
-                    <li><a href="exo3.php">Exercice 3</a></li>
-                </ul>
-            </nav>
-        </header>
+        <? require_once('include/header.php'); ?>
         <main>
             <section class="main_content">
                 <p class="main_title">
@@ -32,9 +23,7 @@
                 </p>
             </section>
         </main>
-        <footer class="footer">
-            <p>© 2023 akkabb, Inc.</p>
-        </footer>
+        <? require_once('include/footer.php');?>
     </div>  
 </body>
 </html>
