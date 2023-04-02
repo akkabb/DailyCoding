@@ -27,27 +27,63 @@
                                 else echo "FALSE<br>";
                             }
                         ';
-                                ?>
+                        ?>
                         <!-- Source : www.exelib.net -->
                     </p>
+                    <p>Donner le résultat envoyé par les instructons suivantes : </p>
+                    <p>
+                        <pre>
+                            <?='
+                                bool("" == FALSE);<br>
+                                bool("0" ==  "");<br>    
+                                bool(0 == "");<br>    
+                                bool(0 === FALSE);<br>    
+                                bool("0" == FALSE);<br>;    
+                            '?>
+                        </pre>
+                    </p>
                 </div>
-                <h3>Ma réponse au sujet : </h3>
-                <?php
-                    $a="Les ";
-                    $b="7 merveilles du monde";
-                    $c=$a . $b;
-                    $d=$b + 13;
-                    $b= &$c;
-                ?>
+                <h3>Mes réponses au sujet : </h3>
+                <p>Pour l'instruction  <strong>bool("" == FALSE)</strong> : </p>
                 <p>
-                    <?php
-                    echo $a . "<br>";
-                    echo $b . "<br>";
-                    echo $c . "<br>";
-                    echo $d . "<br>";
-                    ?>
+                    <pre>
+                        <?php  
+                        var_dump((bool)"" == FALSE);
+                        ?>
+                    </pre>
                 </p>
-                  ?></p>
+                <p>Pour l'instruction   <strong>bool("0" ==  "")</strong> : </p>
+                <p>
+                    <pre>
+                        <?php  
+                        var_dump((bool) "0" == "");
+                        ?>
+                    </pre>
+                </p>
+                <p>Pour l'instruction  <strong>bool(0 == "")</strong> : </p>
+                <p>
+                    <pre>
+                        <?php  
+                        var_dump((bool) 0 == "");
+                        ?>
+                    </pre>
+                </p>
+                <p>Pour l'instruction  <strong>(0 === FALSE)</strong> : </p>
+                <p>
+                    <pre>
+                        <?php  
+                        var_dump((bool) 0 === FALSE);
+                        ?>
+                    </pre>
+                </p>
+                <p>Pour l'instruction  <strong>bool("0" == FALSE)</strong> : </p>
+                <p>
+                    <pre>
+                    <?php
+                        var_dump((bool)"0" === FALSE);
+                    ?>
+                    </pre>
+                </p>
             </section>
         </main>
         <?php require_once('./include/footer.php')?>

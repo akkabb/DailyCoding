@@ -23,27 +23,18 @@
                     </p>
                 </div>
                 <h3>Ma réponse au sujet : </h3>
-                <?php
-                    $a="Les ";
-                    $b="7 merveilles du monde";
-                    $c=$a . $b;
-                    $d=$b + 13;
-                    $b= &$c;
-                ?>
                 <p>
                     <?php
-                    echo $a . "<br>";
-                    echo $b . "<br>";
-                    echo $c . "<br>";
-                    echo $d . "<br>";
+                        // var_dump($_SERVER['SERVER_NAME']);
+                        echo PHP_VERSION . "<br>";
+                        echo PHP_OS . "<br>";
+                        echo __FILE__ . "<br>";
+                        var_dump($_SERVER['HTTP_HOST']);
+                        echo "<br>";
+                        var_dump( $_SERVER['HTTP_ACCEPT_LANGUAGE']);
+                        echo "<br>";
                     ?>
                 </p>
-                <p>
-                    <?php
-                       for  ($i = 0; $i<50; $i++)
-                       echo "**";
-                       ?>
-                 </p>
                 
             </section>
         </main>
