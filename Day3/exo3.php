@@ -13,10 +13,10 @@
         <main>
             <div class="wrapper">
                 <h2>Enoncé</h2>
-                <p>
-                    3. Utiliser la boucle for pour tester si un nombre donné est premier
-                    //Source : www.exelib.net
-                </p>
+                <h3>
+                    Utiliser la boucle for pour tester si un nombre donné est premier<br>
+                    <small>Source : www.exelib.net</small>
+                </h3>
             </div>
             <div class="info">
                 <div class="info_header">
@@ -30,21 +30,22 @@
                 </div>
             </div>
             <div class="answer">
-                <p>
+                <h3>
                     Je m'applique à solutionner le problème :
-                </p>
+                </h3>
                 <?php
-                    $userNumber = 15;
-                    $i = 0;
-
-                    while ($i < $userNumber)
-                    {
-                        if ($i % 3 == 0)
-                        { 
-                            echo $i . 'est multiple de 3 <br>';
-                        }
-                        $i++;
-                    }
+                   $n=23;
+                   $count=1;
+                   //la fonction sqrt($n) renvoie la racine du nombre $n
+                   $racine=sqrt($n);
+                   for($i=2; $i<=$racine;$i++) {
+                       if($n % $i == 0) $count++;
+                   }
+                   if($count==1)
+                       echo"$n est un nombre premier";
+                   else 
+                       echo"$n n'est pas un nombre premier";
+                    //Source : www.exelib.net
                 ?>
             </div>
         </main>
