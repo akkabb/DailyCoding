@@ -22,13 +22,21 @@
                 <h3>
                     Je m'applique à solutionner le problème :
                 </h3>
+                <p>Voici la phrase donnée :<p>
+                <p> <span class="exo2_sentence">Je travaille tous les jours pour ne pas oublier de repéter mon daily coding</span></p>
+                <p>voici le code : </p>
+                <pre>
+                    $s = "Je travaille tous les jours pour ne pas oublier de repéter mon daily coding";<br>
+                    $upper = ucwords($s);<br>
+                    echo $upper;<br>
+                </pre>
                 <?php
-                   
+                    //ucfirst() => pour mettre en majuscule la première lettre d'une chaine.
+                    //ucwords() => pour mettre en majuscule la première lettre de chaque mot dans une chaine.
+                   $s = "Je travaille tous les jours pour ne pas oublier de repéter mon daily coding";
+                   $upper = ucwords($s);
+                   echo $upper;
                 ?>
-                
-            </div>
-            <div class="answer">
-                
             </div>
         </main>
         <? require_once('include/footer.php'); ?>

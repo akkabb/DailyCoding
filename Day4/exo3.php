@@ -39,12 +39,24 @@
                     Je m'applique à solutionner le problème :
                 </h3>
                 <?php
-                   
+                    $titre1= "Structures de base";
+                    $titre2= "Les classes";
+                    $page1="1";
+                    $page2="5";
+                    // $len1 = strlen($titre1);
+                    // $len2 = strlen($titre2);
+                    // echo $len1 . " et " . $len2;
+                   echo str_pad($titre1, 26, ".") . $page1;
+                   echo "<br>";
+                   echo str_pad($titre2, 30, ".") . $page2;
                 ?>
-                
             </div>
             <div class="answer">
-                
+                <p>Voici mon code : </p>
+                <pre>
+                   echo str_pad($titre1, 26, ".") . $page1;
+                   echo str_pad($titre2, 30, ".") . $page2;
+                </pre>
             </div>
         </main>
         <? require_once('include/footer.php'); ?>

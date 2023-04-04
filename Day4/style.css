@@ -3,6 +3,13 @@
 }
 /* GENERALITES */
 
+/* EXO 2*/
+
+.exo2_sentence{
+    background-color: cornsilk;
+    padding: 0.2em;
+    border: dashed;
+}
 /* EXO 3*/
 .wrap_exo3 div{
     display: flex;

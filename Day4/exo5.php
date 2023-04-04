@@ -28,7 +28,11 @@
                     Je m'applique à solutionner le problème :
                 </h3>
                 <?php
-                   
+                    $ul = "ul";
+                    $li = "li";
+                    $item1 = "item1";
+                    $item2 = "item2";
+                    echo '<'.$ul.'><'.$li.'>'.$item1.'</'.$li.'><'.$li.'>'.$item2.'</'.$li.'></'.$ul .'>';
                 ?>
                 
             </div>
