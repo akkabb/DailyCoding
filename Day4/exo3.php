@@ -58,6 +58,20 @@
                    echo str_pad($titre2, 30, ".") . $page2;
                 </pre>
             </div>
+            <div class="correction correction_exo3">
+                <h3>La correction : </h3>
+                <p><em>Très interessante et plus complète que ce que j'ai pu réaliser : </em></p>
+                <pre>
+                <!-- on complète par des espaces pour la première ligne jusqu'à arriver à 20 caractères -->
+                <!-- pour les numéros de pages on complète sur le coté gauche. -->
+                echo str_pad("Chapitres",20," "),str_pad("Pages",20," ",STR_PAD_LEFT),"&ltbr&gt";
+
+                echo str_pad($titre1,20,"."),str_pad($page1,20,".",STR_PAD_LEFT),"&ltbr&gt";
+                
+                echo str_pad($titre2,20,"."),str_pad($page2,20,".",STR_PAD_LEFT),"&ltbr&gt";
+                //Source : www.exelib.net
+                </pre>
+            </div>
         </main>
         <? require_once('include/footer.php'); ?>
     </div>

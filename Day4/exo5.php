@@ -37,7 +37,33 @@
                 
             </div>
             <div class="answer">
-                
+                <h3>Je n'ai pas su trouver la réponse.</h3>
+                <p><strong>J'invoque la force de la correction : </strong></p>
+                <?php
+                    echo htmlspecialchars("<ul>
+                        <li>item 1</li>
+                        <li> item 2</li>
+                        </ul>");
+                    echo htmlentities("<ul>
+                        <li>item 1</li>
+                        <li> item 2</li>
+                        </ul>");
+                    //Source : www.exelib.net
+
+                ?>
+                <div class="code_correction">
+                    <h3>Voici le code : </h3>
+                    <pre>
+                    echo htmlspecialchars("&ltul&gt
+                    &ltli&gtitem 1&ltli&gt
+                    &ltli&gt item 2&ltli&gt
+                    &ltul&gt");
+                    echo htmlentities("&ltul&gt
+                    &ltli&gtitem 1&ltli&gt
+                    &ltli&gt item 2&ltli&gt
+                    &ltul&gt");
+                    </pre>
+                </div>
             </div>
         </main>
         <? require_once('include/footer.php'); ?>

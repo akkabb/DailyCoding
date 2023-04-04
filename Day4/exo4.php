@@ -41,12 +41,33 @@
                     Je m'applique à solutionner le problème :
                 </h3>
                 <?php
-                   
+                   $str = "PHP 7 news";
+                   $i = 0;
+                   $len = strlen($str);
+                   while ($i < $len)
+                   {
+                    $char = substr($str, $i, 1);
+                    echo "le code ASCII du caractere ". '"'. $char .'"' . " est: " . ord($char) ."<br>";
+                    $i++;
+                   }
                 ?>
-                
             </div>
             <div class="answer">
-                
+                <h3>Voici mon code : </h3>
+                <pre>
+                    $str = "PHP 7 news";<br>
+                   $i = 0;<br>
+                   $len = strlen($str);<br>
+                   while ($i < $len)<br>
+                   {<br>
+                    $char = substr($str, $i, 1);<br>
+                    echo "le code ASCII du caractere ". '"'. $char .'"' . " est: " . ord($char) ."&ltbr&gt";
+                    $i++;<br>
+                   }<br>
+                </pre>
+                <p>La fonction <strong>ord</strong> retourne le code ASCII d'un caractère.</p>
+                <p>La fonction <strong>strlen</strong> calcule la taille d'un chaîne.</p>
+                <p>La fonction <strong>substr</strong> retourne un ségment d'un chaîne.</p>
             </div>
         </main>
         <? require_once('include/footer.php'); ?>
