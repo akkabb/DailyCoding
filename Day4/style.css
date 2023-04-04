@@ -1,0 +1,12 @@
+*{
+    box-sizing: border-box;
+}
+/* GENERALITES */
+
+/* EXO 3*/
+.wrap_exo3 div{
+    display: flex;
+}
+.wrap_page{
+    padding-left: 7em;
+}
