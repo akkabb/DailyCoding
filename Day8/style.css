@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --calhy-color: #26c6da;
+}
+.container{
+    line-height: 1.5;
+}
+.logo{
+    width: 5%;
+}
+.p_topic{
+    color: var(--calhy-color);
+    font-size: 1.125rem;
+}
+/**
+Exo 1 page
+**/
+table{
+    border-collapse: collapse;
+}
+td, th{
+    border: 1px solid #000;
+    text-align: center;
+    padding: .8em ;
+}
