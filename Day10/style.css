@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    line-height: 1.5;
+}
+pre{
+    background-color: #000;
+    color: #fff;
+}
+.head_note{
+    background-color: aqua;
+    padding: .3em;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.head_note p{
+    margin: 0;
+}
+article{
+    font-size: 1.5rem;
+    background-color: cornflowerblue;
+    margin-top: -1em;
+    padding-left: .5em;
+}
+.logo{
+    width: 20%;
+}
