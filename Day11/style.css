@@ -1,0 +1,28 @@
+/*
+    GENERALITES
+*/
+*{
+    box-sizing: border-box;
+}
+:root{
+    --white: #fff;
+}
+.logo{
+    width: 20%;
+}
+/*
+INDEX
+*/
+
+/*
+    EXO 1
+*/
+.li_circle{
+    list-style: circle;
+}
+legend{
+    font-weight: bold;
+}
+.btn{
+    padding-left: 3em;
+}
