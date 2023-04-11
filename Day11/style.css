@@ -10,6 +10,9 @@
 .logo{
     width: 20%;
 }
+ul{
+    list-style: none;
+}
 /*
 INDEX
 */
@@ -22,7 +25,31 @@ INDEX
 }
 legend{
     font-weight: bold;
+    color: aqua;
+    font-size: 14px;
+    text-shadow: 1px 1px 1px 1px;
 }
-.btn{
+label{
+    color: blueviolet;
+}
+.form_field{
+    display: flex;
+}
+input{
+    background-color: aqua;
+    border-radius: 25px;
+}
+input:focus{
+    background-color: aliceblue;
+    color: #000;
+}
+input:hover{
+    background-color: bisque;
+}
+.btn:hover{
+    border-style: dashed;
+    padding: 1.5em;
+}
+.btn_wrapper{
     padding-left: 3em;
 }

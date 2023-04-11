@@ -1,3 +1,8 @@
+<?php
+    const ERRORCAPITAL = "Veuilez repecter le format requis.";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,34 +54,46 @@
     </div>
     <div class="answer">
         <h3>Let's Go</h3>
-        <form action="" method="post">
+        <?php 
+             
+        ?>
+        <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
             <fieldset>
             <legend>Inscription</legend>
-            <label for="lastname">Nom</label>
-            <input type="text" name="lastname" id="" required autofocus>
-            <br>
-            <label for="firstname">Prenom</label>
-            <input type="text" name="firstname" id="" required>
-            <br>
-            <label for="dateBirth">Date de naissance</label>
-            <input type="date" name="dateBirth" id="" required>
-            <!-- <input type="text" name="firstname" id=""> -->
-            <br>
-            <label for="pass">Mot de passe</label>
-            <input type="password" name="pass" id="" required>
-            <br>
-            <label for="passConfirm">Confirmer mot de passe</label>
-            <input type="password" name="passConfirm" id="" required>
-            <br>
-            <div class="btn">
-                <input type="button" value="Valider">
-                <input type="button" value="Annuler">
+            <div class="lname form_field">
+                <label for="lastname">Nom</label>
+                <input type="text" name="lastname" id="" placeholder="Tapez votre nom" onKeyUp = "this.value=this.value.toUpper()" required autofocus>
+            </div>
+            <div class="fname form_field">
+                <label for="firstname">Prenom</label>
+                <input type="text" name="firstname" id="" >
+            </div>
+            <div class="birth form_field">
+                <label for="dateBirth">Date de naissance</label>
+                <input type="date" name="dateBirth" id="" >
+            </div>
+            <div class="pass form_field">
+                <label for="pass">Mot de passe</label>
+                <input type="password" name="pass" id="" >
+            </div>
+            <div class="passConfirm form_field">
+                <label for="passConfirm">Confirmer mot de passe</label>
+                <input type="password" name="passConfirm" id="" >
+            </div>
+            <div class="btn_wrapper form_field">
+                <input type="submit" name="submit" value="Valider" class="btn submit_btn">
+                <input type="button" name="delete" value="Annuler" class="btn delete_btn">
             </div>
             </fieldset>
         </form>
 
     </div>
+    <div class="comment">
+        <h3>LINKS</h3>
+        <p>Je mets ici la <a href="https://www.exelib.net/php/page-d-inscription-dans-club-de-sport.html#solution-tab">correction</a> , surtout que cela me servira pour JS </p>
+    </div>
     <? require('include/footer.php');?>
     </div>
+    <script></script>
 </body>
 </html>
