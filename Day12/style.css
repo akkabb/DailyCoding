@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --sectionPair: #dbbaba;
+    --sectionImpair: rgb(215 64 64);
+}
+
+.red{
+    background-color: var(--sectionImpair);
+}
+.almostRed{
+    background-color: var(--sectionPair);
+}
