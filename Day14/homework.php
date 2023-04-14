@@ -10,146 +10,191 @@
 <body>
     <a href="index.php">back to the Reason Why</a>
     <h2>Exercices pour débutant</h2>
-    <section class="exo11 ">
+    <section class="exo11 impair">
         <div class="wrapper">
-            <h3>Fonction qui retourne Hello world</h3>
+            <h3>Créer une fonction from scratch qui s'appelle <strong>plusPetit()</strong>. <br> Elle prendra deux arguments de type int. Elle devra retourner le plus petit des deux.</h3>
         </div>
         <div class="answer">
             <h3>Voici mon essai : </h3>
             <?
-            function greetings()
+            function plusPetit($int, $num)
             {
-                echo "Hello world";
+                if ($int < $num)
+                    return $int;
+                else
+                    return $num;
             }
-            greetings();
+            echo plusPetit(1, 7);
             ?>
             <h3>Voici mon code :</h3>
             <p class="monCode">
-            function greetings()
+            function plusPetit($int, $num)
             {<br>
-                return "Hello world";<br>
+                if ($int < $num) <br>
+                    return $int; <br>
+                else  <br>
+                    return $num; <br>
             }
+            <br>
+            echo plusPetit(1, 7);
             </p>
         </div>
         <div class="comment">
             <h3>Mon point de vue :</h3>
-            <p>Cet exercice est interessant pour afficher son premier texte en php<br> ça change du simple echo</p>
+            <p>Varainte de l'exercice précédent</p>
         </div>
     </section>
-    <section class="exo12 ">
+    <section class="exo12 pair">
         <div class="wrapper">
-            <h3>Créer une fonction from scratch qui s'appelle quiEstLeMeilleurProf(). <br> Elle doit retourner <span>Le prof de programmation web</span> </h3>
+            <h3>Créer une fonction from scratch qui s'appelle plusPetit(). Elle prendra trois arguments de type int. Elle devra retourner le plus petit des trois.</h3>
         </div>
         <div class="answer">
             <h3>Voici mon essai : </h3>
             <?
-            function quiEstLeMeilleurProf()
+            function plusPetitDesTrois($a, $b, $c)
             {
-                echo "Le prof de programmation web";
+                if (($a < $b) && ($a < $c))
+                    return $a;
+                else if (($b < $a) && ($b < $c))
+                    return $b;
+                else
+                    return $c;
             }
 
-            echo quiEstLeMeilleurProf();
+            echo plusPetitDesTrois(9, 7, 5);
             ?>
             <h3>Voici mon code :</h3>
             <p class="monCode">
-            function quiEstLeMeilleurProf()
+            function plusPetitDesTrois($a, $b, $c)
             {<br>
-                echo "Le prof de programmation web";<br>
-            }
+                if (($a < $b) && ($a < $c)) <br>
+                    return $a; <br>
+                else if (($b < $a) && ($b < $c)) <br>
+                    return $b; <br>
+                else <br>
+                    return $c;
+            } <br>
+            echo plusPetitDesTrois(9, 7, 5);
             </p>
         </div>
         <div class="comment">
             <h3>Mon point de vue :</h3>
-            <p>Lorsque la réussite est là , ça fait plaisir</p>
+            <p>variante de l'exercice précédent et comme l'on ne peut avoir deux fonctions avec le même nom sur la même page, <br> j'ai modifié le nom de la fonction demandée</p>
         </div>
     </section>
-    <section class="exo13">
+    <section class="exo13 impair">
         <div class="wrapper">
-            <h3>Créer une fonction from scratch qui s'appelle <strong>jeRetourneMonArgument()</strong>. Exemple : Arg = "abc" ==> Return abc Arg = 123 ==> Return 123</h3>
+            <h3>Créer une fonction from scratch qui s'appelle premierElementTableau(). <br> Elle prendra un argument de type array. Elle devra retourner le premier élement du tableau. Si l'array est vide, il faudra retourner null;</h3>
         </div>
         <div class="answer">
             <h3>Voici mon essai : </h3>
             <?
-            function jeRetourneMonArgument($arg)
+            function premierElementTableau($arr)
             {
-                
-                return $arg;
+                if (!$arr)
+                    return null;
+                else
+                    return $arr[0];
             }
-
-            echo jeRetourneMonArgument(123);
+            $arr = [
+                7,5,8,9
+            ];
+            echo premierElementTableau($arr);
             ?>
             <h3>Voici mon code :</h3>
             <p class="monCode">
-            function jeRetourneMonArgument($arg)
+            function premierElementTableau($arr)
             {<br>
-                return $arg;<br>
-            }
+                if (!$arr) <br>
+                    return null; <br>
+                else <br>
+                    return $arr[0]; <br>
+            } <br>
 
-            echo jeRetourneMonArgument(123);
+            $arr = [7,5,8,9]; <br>
+
+            echo premierElementTableau($arr);
             </p>
         </div>
         <div class="comment">
             <h3>Mon point de vue :</h3>
-            <p>Un argument ; un truc dans la parethèse de l afonctio quoi!</p>
+            <p>mélange de function avec argument et array, whaoo ça commence à devenir intéressant</p>
         </div>
     </section>
-    <section class="exo14">
+    <section class="exo14 pair">
         <div class="wrapper">
-            <h3>Créer une fonction from scratch qui s'appelle <strong>concatenation()</strong>. Elle prendra deux arguments de type string. Elle devra retourner la concatenation des deux. Exemple : argument 1 = Antoine Argument 2 = Griezmann; Resultat : AntoineGriezmann</h3>
+            <h3>Créer une fonction from scratch qui s'appelle <strong>dernierElementTableau()</strong>. <br> Elle prendra un argument de type array. Elle devra retourner le dernier élement du tableau. Si l'array est vide, il faudra retourner null;</h3>
         </div>
         <div class="answer">
             <h3>Voici mon essai : </h3>
             <?
-            function concatenation($str, $str1)
+            function dernierElementTableau($str)
             {
-                return $str . $str1;
+                if(!$str)
+                    return null;
+                else
+                    return end($str);
             }
-
-            echo concatenation("Antoine", "Griezmann");
+            $str = [5, 2, 6, 8, 9];
+            echo dernierElementTableau($str);
             ?>
             <h3>Voici mon code :</h3>
             <p class="monCode">
-            function concatenation($str, $str1)
+            function dernierElementTableau($str)
             {<br>
-                return $str . $str1;<br>
-            }
-
-            echo concatenation("Antoine", "Griezmann");
+                if(!$str) <br>
+                    return null; <br>
+                else <br>
+                    return end($str);   <br>
+            } <br>
+            $str = [5, 2, 6, 8, 9];
+            <br>
+            echo dernierElementTableau($str);
             </p>
         </div>
         <div class="comment">
             <h3>Mon point de vue :</h3>
-            <p>La concaténation : ajoute un élément au premier!??</p>
+            <p>Je me suis seervi d'une fonction existante à php , je ne sais pas si cela était permis</p>
         </div>
     </section>
-    <section class="exo15">
+    <section class="exo15 impair">
         <div class="wrapper">
-            <h3>Créer une fonction from scratch qui s'appelle <strong>concatenationAvecEspace()</strong>. Elle prendra deux arguments de type string. Elle devra retourner la concatenation des deux. <br> Exemple : argument 1 = Ngolo Argument 2 = Kante; Resultat : Ngolo Kante</h3>
+            <h3>Créer une fonction from scratch qui s'appelle <strong>plusGrand()</strong>. <br> Elle prendra un argument de type array. Elle devra retourner le plus grand des élements présent dans l'array. Si l'array est vide, il faudra retourner null;</h3>
         </div>
         <div class="answer">
             <h3>Voici mon essai : </h3>
             <?
-            function concatenationAvecEspace($str, $str1)
+            function plusGrand($str)
             {
-                return $str . " " .$str1;
+                if (!$str)
+                    return null;
+                else
+                    return max($str);
             }
 
-            echo concatenationAvecEspace("Ngolo", "Kante");
+            $arr = [9, 11, 142];
+            echo plusGrand($arr);
             ?>
             <h3>Voici mon code :</h3>
             <p class="monCode">
-            function concatenationAvecEspace($str, $str1)
+            function plusGrand($str)
             {<br>
-                return $str . " " .$str1;<br>
-            }
-
-            echo concatenationAvecEspace("Ngolo", "Kante");
+                if (!$str) <br>
+                    return null; <br>
+                else <br>
+                    return max($str); <br>
+            } <br>
+            $arr = [9, 11, 142]; <br>
+            echo plusGrand($arr);
             </p>
         </div>
         <div class="comment">
             <h3>Mon point de vue :</h3>
-            <p></p>
+            <p>Je me suis seervi d'une fonction existante à php , je ne sais pas si cela était permis</p>
         </div>
     </section>
+    <footer>
+        <p>© 2023 akkabb, Inc. <span class="footer_span">|</span> 2023 l'année de l'algo</p>
+    </footer>
 </body>
 </html>
