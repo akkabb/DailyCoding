@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --pair-bg: aliceblue;
+    --impair-bg: cornsilk;
+}
+/* GENERALITES */
+body {
+    line-height: 1.5;
+    margin: 0 auto;
+    width: 70%;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* HOMEWORK */
+.pair, .impair{
+    padding: 5em;
+}
+.pair{
+    background-color: var(--pair-bg);
+}
+.impair{
+    background-color: var(--impair-bg);
+}
+.chevron_ouvrant, .chevron_fermant{
+    border: 1px dotted darksalmon;
+    
+}
