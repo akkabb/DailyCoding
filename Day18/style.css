@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+ --bg_black : #000;
+ --bg_whitesmoke : whitesmoke;
+ --bg_beige: #b0aaaa;
+ --bg_violet: blueviolet;
+}
+body{
+    background: var(--bg_black);
+}
+.container{
+    margin: 0 auto;
+    width: 90%;
+    background-color: var(--bg_whitesmoke);
+    line-height: 1.5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2em;
+    font-size: 1.5rem;
+}
+.pre{
+    background-color: var(--bg_beige);
+    border-left: solid;
+    width: 70%;
+    border-radius: 1em;
+    border-left-color: black;
+    border-left-width: 1em;
+    padding: 0.5em 0.75em 0.5em 0.75em;
+}
+.exercice{
+    color: var(--bg_violet);
+}
