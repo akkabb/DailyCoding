@@ -102,21 +102,26 @@
                 <span class="pre">
                     <?php 
                        for ($i=1; $i <= 5; $i++) { 
-                        
-                        for ($k = 1; $k <= 1; $k++) {
+                        for ($k = 1; $k <= $i; $k++) {
                             echo $i;
-                            echo '<br>';
                         }
+                        echo '<br>';
                        }
                     ?>
                 </span>
                 <h3>Voici mon code : </h3>
                 <p>
-                   
+                    for ($i=1; $i <= 5; $i++) {  <br> 
+                        for ($k = 1; $k <= $i; $k++) { <br>
+                            echo $i; <br>
+                        } <br>
+                        echo &ltbr&gt;
+                       }
                 </p>
                 <div class="comment">
                     <h3 class="comment_title">Mon commentaire :</h3>
-                    <p>Je ne suis pas à l'aise avec les boucles. Alors les boucles imbriquées, je n'en parle pas!!!</p>
+                    <p>Sans la Correction je n'y serai jamais arrivé</p>
+                    <p>Je ne suis pas à l'aise avec les boucles. Alors les boucles imbriquées, je n'en parle même pas!!!</p>
                 </div>
             </div>
             <div class="correction">
