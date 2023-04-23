@@ -41,7 +41,7 @@
                             I didn't know how to solve it. I google the resume. And was estonished to find phpinfo().
                             I like to learn everyday, something new.
                         </p>
-                        <p>There's a ink to the solution given by the website : <a href="https://www.w3resource.com/php-exercises/php-basic-exercise-1.php">solution</a></p>
+                        <p>There's a link to the solution given by the website : <a href="https://www.w3resource.com/php-exercises/php-basic-exercise-1.php">solution</a></p>
                     </div>
                 </div>
             </section>
@@ -298,22 +298,51 @@ Go to the PHP Tutorial.</p>
                     <h3>Write a PHP script, to check whether the page is called from 'https' or 'http'. </h3>
                 </div>
                 <div class="answerWrapper">
-                    <div class="mySol"></div>
-                    <div class="comment_area"></div>
+                    <div class="mySol">
+                        <h3>Solved IT !</h3>
+                        <?php
+                            $protocol = isset($_SERVER['HTTPS']) ? 'https' : 'http';
+                            echo $protocol;
+                        ?>
+                    </div>
+                    <div class="myCode">
+                        <h3>Show my code</h3>
+                        <p>
+                            $protocol = isset($_SERVER['HTTPS']) ? 'https' : 'http'; <br>
+                            echo $protocol; <br>
+                        </p>
+                    </div>
+                    <div class="comment_area">
+                        <p>it helped me : <a href="https://koenwoortman.com/php-check-if-http-or-https/">koenwoortman website</a> </p>
+                    </div>
                 </div>
             </section>
             <section class="exo11">
             <h2>Exercice 11</h2>
                 <div class="resumeWrapper">
-                    <h3>Write a PHP script, to check whether the page is called from 'https' or 'http'. </h3>
+                    <h3>Write a PHP script to redirect a user to a different page . </h3>
                     <div class="resumeOutputExple">
                         <p><strong>Expected Output :</strong></p>
                         <p>Redirect the user to https://www.w3resource.com/</p>
                     </div>
                 </div>
                 <div class="answerWrapper">
-                    <div class="mySol"></div>
-                    <div class="comment_area"></div>
+                    <div class="mySol">
+                        <h3>Go Ahead</h3>
+                        <?php
+                            // echo header('location: https://www.w3resource.com/');
+                            echo 'I comment tha code. You can see my solution, just look down!';
+                        ?>
+                    </div>
+                    <div class="myCode">
+                        <h3>Showing my code</h3>
+                        <p>
+                            echo header('location: https://www.w3resource.com/');
+                        </p>
+                    </div>
+                    <div class="comment_area">
+                        <p>it helps to do that more often, i had this exercice few days before. i felt comfortable</p>
+                    </div>
                 </div>
             </section>
             <section class="exo12">
@@ -328,8 +357,35 @@ Go to the PHP Tutorial.</p>
                     </div>
                 </div>
                 <div class="answerWrapper">
-                    <div class="mySol"></div>
-                    <div class="comment_area"></div>
+                    <div class="mySol">
+                        <h3>Let's try </h3>
+                        <?php
+                            $email = 'pettet.com';
+                            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                              $emailErr = "Invalid email format";
+                              echo $email. ' ==== ' .$emailErr;
+                            }
+                            else{
+                                echo $email . " = valid";
+                            }
+                        ?>
+                    </div>
+                    <div class="myCode">
+                        <h3> I show you my code</h3>
+                        <p>
+                            $email = 'pettet.com'; <br>
+                            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) { <br>
+                              $emailErr = "Invalid email format"; <br>
+                              echo $email. ' ==== ' .$emailErr; <br>
+                            } <br>
+                            else{ <br>
+                                echo $email . " = valid"; <br>
+                            } <br>
+                        </p>
+                    </div>
+                    <div class="comment_area">
+                        <p>Not easy for me. Need to google it and see the solution to be more confident. </p>
+                    </div>
                 </div>
             </section>
         </main>

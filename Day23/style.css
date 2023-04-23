@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --title_color: blueviolet;
+    --main_bg: #e6d3c5;
+    --container_bg: #ece0d8;
+    --White: #fff;
+    --black: #000;
+}
+.container{
+    background-color: var(--container_bg);
+    line-height: 1.5;
+    padding: 2em;
+}
+main{
+    margin: 0 auto;
+    width: 90%;
+    background-color: var(--main_bg);
+    padding: 2em;
+}
+h1{
+    color: blue;
+}
+h2{
+    margin: 1em 0;
+    color: var(--title_color);
+}
+.resumeWrapper{
+    background: var(--black);
+    color: var(--White);
+    padding: 2em;
+    border-left: 22px solid sandybrown;
+    border-radius: 1em;
+}
+.resumeWrapper h3{
+    margin: 1em 0;
+}
