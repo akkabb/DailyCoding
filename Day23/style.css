@@ -8,11 +8,14 @@
     --container_bg: #ece0d8;
     --White: #fff;
     --black: #000;
+    --margin_design: 1em 0;
+    --green_light: chartreuse;
 }
 .container{
     background-color: var(--container_bg);
     line-height: 1.5;
     padding: 2em;
+    font-size: 1.5rem;
 }
 main{
     margin: 0 auto;
@@ -27,13 +30,23 @@ h2{
     margin: 1em 0;
     color: var(--title_color);
 }
+.answerWrapper h3{
+    /* color: var(--green_light); */
+    
+     color: #d8109b;
+}
 .resumeWrapper{
     background: var(--black);
     color: var(--White);
     padding: 2em;
     border-left: 22px solid sandybrown;
     border-radius: 1em;
+    margin: var(--margin_design);
 }
 .resumeWrapper h3{
     margin: 1em 0;
+}
+.mySol{
+    margin: 1em 0;
+
 }

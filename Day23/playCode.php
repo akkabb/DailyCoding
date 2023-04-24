@@ -37,6 +37,7 @@
                         </p>
                     </div>
                     <div class="comment_area">
+                        <h3>my point of view</h3>
                         <p class="comment_style">
                             I didn't know how to solve it. I google the resume. And was estonished to find phpinfo().
                             I like to learn everyday, something new.
@@ -76,6 +77,7 @@
                             </p>
                         </div>
                         <div class="comment_area">
+                            <h3>my point of view</h3>
                             <p>basic one. help to practice de differenc between simple and double quote </p>
                         </div>
                     </div>
@@ -114,6 +116,7 @@ Go to the PHP Tutorial.</p>
                             </p>
                         </div>
                         <div class="comment_area">
+                            <h3>my point of view</h3>
                             <p>
                                 I didn't did it like it ask. but i understood what it means.
                             </p>
@@ -171,6 +174,7 @@ Go to the PHP Tutorial.</p>
                         </p>
                     </div>
                     <div class="comment_area">
+                        <h3>my point of view</h3>
                         <p>it helped me to know the global $_POST</p>
                     </div>
                 </div>
@@ -188,7 +192,9 @@ Go to the PHP Tutorial.</p>
                             echo $_SERVER['REMOTE_ADDR'];
                         ?>
                     </div>
-                    <div class="comment_area"></div>
+                    <div class="comment_area">
+                        <h3>my point of view</h3>
+                    </div>
                 </div>
             </section>
             <section class="exo6">
@@ -212,6 +218,7 @@ Go to the PHP Tutorial.</p>
                         <p>echo 'Your User-Agent is : ' . $_SERVER['HTTP_USER_AGENT'];</p>
                     </div>
                     <div class="comment_area">
+                        <h3>my point of view</h3>
                         <p>I google it, it helped me to find the solution!</p>
                     </div>
                 </div>
@@ -271,6 +278,7 @@ Go to the PHP Tutorial.</p>
                         </p>
                     </div>
                     <div class="comment_area">
+                        <h3>my point of view</h3>
                         <p>I can't manage without google. Nice to search and find the sol</p>
                     </div>
                 </div>
@@ -288,8 +296,26 @@ Go to the PHP Tutorial.</p>
                     </div>
                 </div>
                 <div class="answerWrapper">
-                    <div class="mySol"></div>
-                    <div class="comment_area"></div>
+                    <div class="mySol">
+                    <?php
+                        $text = 'PHP Tutorial';
+                        $text = preg_replace('/(\b[a-z])/i','<span style="color:red;">\1</span>',$text);
+                        echo $text;
+                    ?>
+                    </div>
+                    <div class="myCode">
+                        <h3>My Script : </h3>
+                        <p>
+                            $text = 'PHP Tutorial'; <br>
+                            $text = preg_replace('/(\b[a-z])/i','<span style="color:red;">\1</span>',$text); <br>
+                            echo $text; <br>
+                        </p>
+                    </div>
+                    <div class="comment_area">
+                        <h3>my point of view</h3>
+                        <p></p>
+                        <p>share the link to the <a href="https://www.w3resource.com/php-exercises/php-basic-exercise-9.php">solution</a></p>
+                    </div>
                 </div>
             </section>
             <section class="exo10">
@@ -313,6 +339,7 @@ Go to the PHP Tutorial.</p>
                         </p>
                     </div>
                     <div class="comment_area">
+                        <h3>my point of view</h3>
                         <p>it helped me : <a href="https://koenwoortman.com/php-check-if-http-or-https/">koenwoortman website</a> </p>
                     </div>
                 </div>
@@ -341,6 +368,7 @@ Go to the PHP Tutorial.</p>
                         </p>
                     </div>
                     <div class="comment_area">
+                        <h3>my point of view</h3>
                         <p>it helps to do that more often, i had this exercice few days before. i felt comfortable</p>
                     </div>
                 </div>
@@ -384,6 +412,7 @@ Go to the PHP Tutorial.</p>
                         </p>
                     </div>
                     <div class="comment_area">
+                        <h3>my point of view</h3>
                         <p>Not easy for me. Need to google it and see the solution to be more confident. </p>
                     </div>
                 </div>
