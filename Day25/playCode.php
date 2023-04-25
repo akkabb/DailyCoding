@@ -19,23 +19,29 @@
                 <div class="answerWrapper">
                     <div class="mySol">
                         <h3>I try my best : </h3>
-                        <?php 
-                        ?>
+                        <p class="php">
+                            <?php 
+                                echo $_SERVER['DOCUMENT_ROOT'];
+                                // The website solution : 
+                                // $rd = getenv('DOCUMENT_ROOT');
+                                // echo $rd."\n";
+                            ?>
+                        </p>
                     </div>
                     <div class="myCode">
                         <h3>I show you my script : </h3>
                         <p>
                             &lt?php <br>
-                            
+                                echo $_SERVER['DOCUMENT_ROOT']; <br>
                             ?&gt
                         </p>
                     </div>
                     <div class="comment_area">
                         <h3>My point of view :</h3>
                         <p>
-                           
+                           As i am not sure that it is the solution. I compare to the websit suggestion. It makes me know that there is an other way to solve it.
                         </p>
-                        <p>There's a link to the solution given by the website : <a href="https://www.w3resource.com/php-exercises/php-basic-exercise-13.php">solution</a></p>
+                        <p>There's a link to the solution given by the website : <a href="https://www.w3resource.com/php-exercises/php-basic-exercise-25.php">solution</a></p>
                     </div>
                 </div>
             </section>
@@ -46,22 +52,26 @@
                     <div class="answerWrapper">
                         <div class="mySol">
                             <h3>Lets GO!!</h3>
-                            <?php
-                             
-                            ?>
+                            <p class="php">
+                                <?php
+                                echo php_uname() . "\n";
+                                echo PHP_OS . "\n";
+                                ?>
+                            </p>
                         </div>
                         <div class="myCode">
                             <h3>My script :</h3>
                             <p>
                                 &lt?php <br>
-                                    
+                                    echo php_uname() . "\n"; <br>
+                                    echo PHP_OS . "\n"; <br>
                                 ?&gt
                             </p>
                         </div>
                         <div class="comment_area">
                             <h3>My point of view :</h3>
-                            <p></p>
-                            <p>There's a link to the solution given by the website : <a href="https://www.geeksforgeeks.org/how-to-get-the-source-code-of-a-web-page-using-php/">solution</a></p>
+                            <p>i googled it and this <a href="https://stackoverflow.com/questions/1482260/how-to-get-the-os-on-which-php-is-running">page</a> helped me to solve it </p>
+                            <p>There's a link to the solution given by the website : <a href="https://www.w3resource.com/php-exercises/php-basic-exercise-26.php">solution</a></p>
                         </div>
                     </div>
                 </section>
@@ -73,24 +83,28 @@
                     <div class="answerWrapper">
                         <div class="mySol">
                             <H3>Try to solve it</H3>
+                            <p class="php">
+                                follw the <a href="php_credits.php">link</a> 
+                            </p>
                             <?php
                                
-                            ?>
+                                // phpcredits(CREDITS_ALL);
+                            ?> 
                         </div>
                         <div class="myCode">
                             <h3>Sample script : </h3>
                             <p>
                                 &lt?php <br>
-                                
+                                    phpcredits(CREDITS_ALL - CREDITS_FULLPAGE); <br>
                                 ?&gt <br>
                             </p>
                         </div>
                         <div class="comment_area">
                             <h3>My point of view :</h3>
                             <p>
-                                
+                                Without google, it was impossible to solve it, i didn't understand . Shoot Out to <a href="https://www.php.net/manual/en/function.phpcredits.php">php.net</a>
                             </p>
-                            <p>There's a link to the solution given by the website : <a href="https://www.w3resource.com/php-exercises/php-basic-exercise-15.php">solution</a></p>
+                            <p>There's a link to the solution given by the website : <a href="https://www.w3resource.com/php-exercises/php-basic-exercise-27.php">solution</a></p>
                         </div>
                     </div>
                 </section>
@@ -102,22 +116,27 @@
                 <div class="answerWrapper">
                     <div class="mySol">
                         <h3>I will try my best :</h3>
-                       
+                       <p class="php">
                         <?php
-                            
+                            $temp_file = tempnam(sys_get_temp_dir(), 'Tux');
+
+                            echo $temp_file;
                         ?>
+                       </p>
                     </div>
                     <div class="myCode">
                         <h3>Show my script :</h3>
                         <p>
                             &lt?php <br>
-                                
+                            $temp_file = tempnam(sys_get_temp_dir(), 'Tux'); <br>
+                            echo $temp_file; <br>
                             ?&gt
                         </p>
                     </div>
                     <div class="comment_area">
                         <h3>my point of view</h3>
-                        <p>I google it and we can compare it with the <a href="https://www.w3resource.com/php-exercises/php-basic-exercise-16.php">solution</a> </p>
+                        <p>I want to say thank you to the <a href="https://www.php.net/manual/en/function.sys-get-temp-dir.php">doc</a></p>
+                        <p>The website <a href="https://www.w3resource.com/php-exercises/php-basic-exercise-28.php">solution</a> </p>
                         <p></p>
                     </div>
                 </div>
@@ -159,21 +178,33 @@
                 <div class="answerWrapper">
                     <div class="mySol">
                         <h3>Try to solve it :</h3>
-                        <?php
-                            
-                        ?>
+                        <p class="php">
+                            <?php
+                                // To Get the last modification time
+                                $last_modification="Last modified: " . date ("F d Y H:i:s.", getlastmod());
+
+                                // To Show the last modification time
+                                echo $last_modification;
+                            ?>
+
+                        </p>
                     </div>
                     <div class="myCode">
                         <h3>Show my script :</h3>
                             <p>
                                 &lt?php <br>
-                                    
+                                // To Get the last modification time <br>
+                                $last_modification="Last modified: " . date ("F d Y H:i:s.", getlastmod()); <br>
+
+                                // To Show the last modification time <br>
+                                echo $last_modification; <br>
                                 ?&gt
                             </p>
                     </div>
                     <div class="comment_area">
                         <h3>my point of view</h3>
-                        <p>There's a link to the solution given by the website : <a href="https://www.w3resource.com/php-exercises/php-basic-exercise-18.php">solution</a></p>
+                        <p>I've done that exercices last week, but i didn't manage to solve it without my best help <span class="design_google">Google</span></p>
+                        <p>There's a link to the solution given by the website : <a href="https://www.w3resource.com/php-exercises/php-basic-exercise-30.php">solution</a></p>
                     
                     </div>
                 </div>
@@ -186,19 +217,68 @@
                 <div class="answerWrapper">
                     <div class="mySol">
                         <h3>Let's GO !!</h3>
+                        <p class="php">
                         <?php
-                           
+                        //    $a = 9;
+                        //    $b = 6;
+                            function swap($a, $b)
+                            {
+                                $tmp = $a;
+                                $a = $b;
+                                $b = $tmp;
+
+                                echo "first parameter value = $a \n";
+                                echo '<br>';
+                                echo "second parameter value = $b \n";
+                                echo '<br>';
+                            }
+
+                        function displayAfterSwap($a, $b)
+                        {
+                            echo "first parameter value = $a \n";
+                            echo '<br>';
+                            echo "second parameter value = $b \n";
+                            echo '<br>';
+                            echo "<br>" . "After the swap : " . "<br>";
+                            echo '<br>';
+                            swap($a, $b);
+                        }
+                        displayAfterSwap(5, 2);
                         ?>
+                        </p>
                     </div>
                     <div class="myCode">
                         <h3>Show my script :</h3>
                             <p>
                                 &lt?php <br>
-                                   
+                                function swap($a, $b) <br>
+                             { <br>
+                                $tmp = $a; <br>
+                                $a = $b; <br>
+                                $b = $tmp; <br>
+
+                                echo "first parameter value = $a \n"; <br>
+                                echo '&ltbr&gt'; <br>
+                                echo "second parameter value = $b \n"; <br>
+                                echo '&ltbr&gt'; <br>
+                            } <br>
+
+                        function displayAfterSwap($a, $b) <br>
+                        { <br>
+                            echo "first parameter value = $a \n"; <br>
+                            echo '&ltbr&gt'; <br>
+                            echo "second parameter value = $b \n"; <br>
+                            echo '&ltbr&gt'; <br>
+                            echo "&ltbr&gt" . "After the swap : " . "&ltbr&gt"; <br>
+                            echo '&ltbr&gt'; <br>
+                            swap($a, $b); <br>
+                        } <br>
+                        displayAfterSwap(5, 2); <br>
                                 ?&gt
                             </p>
                     </div>
                     <div class="comment_area">
+                        <h3>my point of view</h3>
                         <p>There's a link to the solution given by the website : <a href="https://www.w3resource.com/php-exercises/php-basic-exercise-19.php">solution</a></p>
                         <p></p>
                     </div>
