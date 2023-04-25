@@ -153,20 +153,25 @@
                     <div class="mySol">
                         <h3>Go GO GO !!!</h3>
                         <?php
-                            
+                            print_r(get_extension_funcs("JSON"));
+                            echo "\n";
+                            print_r(get_extension_funcs("XML"))."\n";
                         ?>
                     </div>
                     <div class="myCode">
                         <h3>Show my script :</h3>
                         <p>
                             &lt?php <br>
-                                
-                            ?&gt
+                            print_r(get_extension_funcs("JSON")); <br>
+                            echo "\n"; <br>
+                            print_r(get_extension_funcs("XML"))."\n"; <br>
+                            ?&gt <br>
                         </p>
                     </div>
                     <div class="comment_area">
                         <h3>my point of view</h3>
-                        <p>There's a link to the solution given by the website : <a href="https://www.w3resource.com/php-exercises/php-basic-exercise-17.php">solution</a></p>
+                        <p>I didn't manage to solve this problem</p>
+                        <p>There's a link to the solution given by the website : <a href="https://www.w3resource.com/php-exercises/php-basic-exercise-29.php">solution</a></p>
                     </div>
                 </div>
             </section>
@@ -296,7 +301,22 @@
                     <div class="mySol">
                         <h3>Ready , Go :</h3>
                         <?php
-                            
+                            function armstrong_number($num) {
+                                $sl = strlen($num);
+                                $sum = 0;
+                                $num = (string)$num;
+                                for ($i = 0; $i < $sl; $i++) {
+                                  $sum = $sum + pow((string)$num . $i,$sl);
+                                }
+                                if ((string)$sum == (string)$num) {
+                                  return "True";
+                                } else {
+                                  return "False";
+                                }
+                              }
+                              echo "Is 153 Armstrong number? ".armstrong_number(153);
+                              echo "\nIs 21 Armstrong number? ".armstrong_number(21);
+                              echo "\nIs 4587 Armstrong number? ".armstrong_number(4587);"\n";
                         ?>
                     </div>
                     <div class="myCode">
@@ -309,7 +329,8 @@
                     </div>
                     <div class="comment_area">
                         <h3>my point of view</h3>
-                        <p>There's a link to the solution given by the website : <a href="https://www.w3resource.com/php-exercises/php-basic-exercise-20.php">solution</a></p>
+                        <p>That one even if i have the solution. stil dont understand. I need more practice on it!</p>
+                        <p>There's a link to the solution given by the website : <a href="https://www.geeksforgeeks.org/how-to-remove-duplicate-values-from-array-using-php/">solution</a></p>
                     </div>
                 </div>
             </section>
@@ -326,20 +347,105 @@
                     <div class="mySol">
                         <h3>Lest's Go </h3>
                     <?php
-                       
+                       function word_digit($word) {
+                        $warr = explode(';',$word);
+                        $result = '';
+                        foreach($warr as $value){
+                            switch(trim($value)){
+                                case 'zero':
+                                    $result .= '0';
+                                    break;
+                                case 'one':
+                                    $result .= '1';
+                                    break;
+                                case 'two':
+                                    $result .= '2';
+                                    break;
+                                case 'three':
+                                    $result .= '3';
+                                    break;
+                                case 'four':
+                                    $result .= '4';
+                                    break;
+                                case 'five':
+                                    $result .= '5';
+                                    break;
+                                case 'six':
+                                    $result .= '6';
+                                    break;
+                                case 'seven':
+                                    $result .= '7';
+                                    break;
+                                case 'eight':
+                                    $result .= '8';
+                                    break;
+                                case 'nine':
+                                    $result .= '9';
+                                    break;    
+                            }
+                        }
+                        return $result;
+                    }
+                    
+                    echo word_digit("zero;three;five;six;eight;one")."<br>";
+                    echo word_digit("seven;zero;one")."<br>";
                     ?>
                     </div>
                     <div class="myCode">
                         <h3>My Script : </h3>
                         <p>
                             &lt?php <br>
-                            
+                            function word_digit($word) { <br>
+                        $warr = explode(';',$word); <br>
+                        $result = ''; <br>
+                        foreach($warr as $value){ <br>
+                            switch(trim($value)){ <br>
+                                case 'zero':  <br>
+                                    $result .= '0'; <br>
+                                    break; <br>
+                                case 'one':  <br>
+                                    $result .= '1'; <br>
+                                    break; <br>
+                                case 'two': <br>
+                                    $result .= '2'; <br>
+                                    break;  <br>
+                                case 'three':  <br>
+                                    $result .= '3';  <br>
+                                    break;  <br>
+                                case 'four': <br>
+                                    $result .= '4';  <br>
+                                    break;  <br>
+                                case 'five':  <br>
+                                    $result .= '5';  <br>
+                                    break;  <br>
+                                case 'six':  <br>
+                                    $result .= '6';  <br>
+                                    break;  <br>
+                                case 'seven': <br>
+                                    $result .= '7';  <br>
+                                    break;  <br>
+                                case 'eight':  <br>
+                                    $result .= '8';  <br>
+                                    break;  <br>
+                                case 'nine': <br>
+                                    $result .= '9';  <br>
+                                    break;    <br>
+                            }  <br>
+                        }  <br>
+                        return $result;  <br>
+                    }  <br>
+                    
+                    echo word_digit("zero;three;five;six;eight;one")."&ltbr&gt"; <br>
+                    echo word_digit("seven;zero;one")."&ltbr&gt"; <br>
                             ?&gt <br>
                         </p>
                     </div>
                     <div class="comment_area">
                         <h3>my point of view</h3>
                         <p>Didn't manage to solve it, i need to do it again and again</p>
+                        <p>
+                            my deliverance comes from this <a href="https://www.brainkart.com/article/A-PHP-program-to-convert-word-to-digit_40716/">link</a>.
+                        </p>
                         <p>share the link to the <a href="https://www.w3resource.com/php-exercises/php-basic-exercise-21.php">solution</a></p>
                     </div>
                 </div>
@@ -355,21 +461,44 @@
                 <div class="answerWrapper">
                     <div class="mySol">
                         <h3>Solved IT !</h3>
+                        <p class="php">
                         <?php
-                            
+                            function test_bit_position($num, $pos1, $pos2) {
+                                $pos1--;
+                                $pos2--;
+                                $bin_num = strrev(decbin($num));
+                                if ($bin_num[$pos1] == $bin_num[$pos2]) {
+                                  return "true";
+                                } else {
+                                  return "false";
+                                }
+                             }
+                             echo test_bit_position(112,5,6)."\n";
                         ?>
+                        </p>
                     </div>
                     <div class="myCode">
                         <h3>Show my code</h3>
                         <p>
                             &lt?php <br>
-                                
+                            function test_bit_position($num, $pos1, $pos2) { <br>
+                                $pos1--; <br>
+                                $pos2--; <br>
+                                $bin_num = strrev(decbin($num)); <br>
+                                if ($bin_num[$pos1] == $bin_num[$pos2]) { <br>
+                                  return "true";  <br>
+                                } else {  <br>
+                                  return "false"; <br>
+                                }  <br>
+                             }  <br>
+                             echo test_bit_position(112,5,6)."\n";  <br>
                             ?&gt 
                         </p>
                     </div>
                     <div class="comment_area">
                         <h3>my point of view</h3>
-                        <p>There's a link to the solution given by the website : <a href="https://www.w3resource.com/php-exercises/php-basic-exercise-22.php">solution</a></p>
+                        <p>On this exercice, i was competely out of mind. Need to take time to understand and retry it.</p>
+                        <p>There's a link to the solution given by the website : <a href="https://www.w3resource.com/php-exercises/php-basic-exercise-34.php">solution</a></p>
                         <p></p>
                     </div>
                 </div>
@@ -380,28 +509,46 @@
                     <h3>Write a PHP program to remove duplicates from a sorted list . </h3>
                     <div class="resumeOutputExple">
                         <p><strong>Input :</strong> (1,1,2,2,3,4,5,5).</p>
-                        <p><strong>Output :</strong> (1,1,2,2,3,4,5,5).</p>
+                        <p><strong>Output :</strong> (1,2,3,4,5).</p>
                     </div>
                 </div>
                 <div class="answerWrapper">
                     <div class="mySol">
                         <h3>Go Ahead</h3>
+                        <p class="php">
                         <?php
+                            $a = [1,1,2,2,3,4,5,5];
                             
+                            $a_unik = array_unique($a);
+                            echo "[";
+                            foreach($a_unik as $value)
+                            {
+                                echo $value . ", ";
+                            }
+                            echo "]";
                         ?>
+                        </p>
                     </div>
                     <div class="myCode">
                         <h3>Showing my code</h3>
                         <p>
                             &lt?php <br>
+                            $a = [1,1,2,2,3,4,5,5]; <br>
                             
+                            $a_unik = array_unique($a); <br>
+                            echo "["; <br>
+                            foreach($a_unik as $value) <br>
+                            { <br>
+                                echo $value . ", "; <br>
+                            } <br>
+                            echo "]"; <br>
                             ?&gt 
                         </p>
                     </div>
                     <div class="comment_area">
                         <h3>my point of view</h3>
-                        <p>There's a link to the solution given by the website : <a href="https://www.w3resource.com/php-exercises/php-basic-exercise-23.php">solution</a></p>
-                        <p></p>
+                        <p>There's a link to the solution given by the website : <a href="https://www.w3resource.com/php-exercises/php-basic-exercise-35.php">solution</a></p>
+                        <p>I try several test but <a href="https://www.geeksforgeeks.org/how-to-remove-duplicate-values-from-array-using-php/">this</a> help me solved it. </p>
                     </div>
                 </div>
             </section>
@@ -414,21 +561,32 @@
                     <div class="mySol">
                         <h3>Let's try </h3>
                         <?php
-                        
+                        $string = 'The lazy fox jumped over the fence';
+                        if (str_ends_with($string, 'Fence')) {
+                            echo 'The string ends with "Fence"';
+                        } else {
+                            echo '"Fence" was not found because the case does not match';
+                        }
                         ?>
                     </div>
                     <div class="myCode">
                         <h3> I show you my code</h3>
                         <p>
                             &lt?php <br>
-                                
+                            $string = 'The lazy fox jumped over the fence'; <br>
+                            if (str_ends_with($string, 'Fence')) { <br>
+                                echo 'The string ends with "Fence"'; <br>
+                            } else { <br>
+                                echo '"Fence" was not found because the case does not match'; <br>
+                            } <br>
                             ?&gt <br>
                         </p>
                     </div>
                     <div class="comment_area">
                         <h3>my point of view</h3>
-                        <p>There's a link to the solution given by the website : <a href="https://www.w3resource.com/php-exercises/php-basic-exercise-24.php">solution</a></p>
-                        <p></p>
+                        <p>i just folow what suggest <a href="https://www.php.net/manual/en/function.str-ends-with.php">php.net</a></p>
+                        <p>There's a link to the solution given by the website : <a href="https://www.w3resource.com/php-exercises/php-basic-exercise-36.php">solution</a></p>
+                        <p>Now i saw the solution, i am asking myself, if its the same. My understanding let me keep it like that.</p>
                     </div>
                 </div>
             </section>
