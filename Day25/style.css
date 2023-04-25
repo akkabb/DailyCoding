@@ -4,16 +4,17 @@
 }
 :root{
     --title_color: ;
-    --main_bg: blueviolet;
+    --main_bg: #71716e;
     --main_color: #fffefd;
-    --container_bg: ;
-    --White: #fff;
+    --container_bg: #606c68;
     --black: #000;
     --margin_design: 1em 0;
     --green_light: chartreuse;
+    --ancre_link: #fff8e1;
+    --answer_area: cyan;
 }
 .container{
-    background-color: var(--green_light);
+    background-color: var(--container_bg);
     color: var(--main_color);
     line-height: 1.5;
     padding: 2em;
@@ -28,14 +29,13 @@ main{
 .resumeWrapper{
     color: var(--black);
 }
+.answerWrapper{
+    color: var(--answer_area);
+}
 h2{
     color: var(--green_light);
     margin: 1em 0;
 }
-table{
-    border-collapse: collapse;
-}
-td{
-    border: 1px solid #000;
-    padding: 0.5em;
+a{
+    color: var(--ancre_link);
 }
