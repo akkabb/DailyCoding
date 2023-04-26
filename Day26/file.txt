@@ -1,0 +1,1 @@
+file_get_contents() est la façon recommandée pour lire le contenu d'un fichier dans une chaîne de caractères. Elle utilisera un buffer en mémoire si ce mécanisme est supporté par votre système, afin d'améliorer les performances.

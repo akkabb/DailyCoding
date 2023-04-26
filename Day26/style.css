@@ -26,3 +26,6 @@ main{
     background-color: var(--black);
     padding: 2em;
 }
+h2{
+    color:blueviolet;
+}
