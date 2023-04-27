@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --title_color: ;
+    --main_bg: #71716e;
+    --main_color: #fffefd;
+    --container_bg: cyan;
+    --black: #000;
+    --margin_design: 1em 0;
+    --green_light: chartreuse;
+    --ancre_link: #fff8e1;
+    --answer_area: #606c68;
+}
+.container{
+    background-color: var(--container_bg);
+    color: var(--main_color);
+    line-height: 1.5;
+    padding: 2em;
+    font-size: 1.5rem;
+}
+main{
+    margin: 0 auto;
+    width: 90%;
+    background-color: var(--black);
+    padding: 2em;
+}
+h2{
+    color:blueviolet;
+}
