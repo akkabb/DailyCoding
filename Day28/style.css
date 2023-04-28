@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main_bg: #3B3C36;
+    --main_color: #fffefd;
+    --container_bg: #DAC8AE;
+    --black: #000;
+    --margin_design: 1em 0;
+    --ancre_link: #FE28A2;
+    --answer_area: #606c68;
+    --lime: #C0FF00;
+    --lemon_chiffon: #FFFACD;
+    --Fushia: #FF00FF;
+}
+.container{
+    background-color: var(--container_bg);
+    color: var(--main_color);
+    line-height: 1.5;
+    padding: 2em;
+    font-size: 1.5rem;
+}
+main{
+    margin: 0 auto;
+    width: 90%;
+    background-color: var(--main_bg);
+    color: #E0D68A;
+    padding: 2em;
+}
+h1{
+    color: var(--Fushia);
+}
+h2{
+    color: var(--lime);
+}.resumeOutputExple, .comment_area{
+    color: var(--lemon_chiffon);
+}
+a{
+    color: var(--ancre_link);
+}
